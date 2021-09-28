@@ -23,6 +23,10 @@ ul {
 img {
 	max-width: 100%;
 }
+
+input {
+  border: none;
+}
 /* Reset end */
 
 .container {
@@ -339,5 +343,36 @@ nav .container ul{
   font-size: 30px;
   line-height: 36px;
   color: #48555B;
+}
+
+.footer {
+  background: #141A20;
+  margin: -5px 0;
+}
+
+.footer-form {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background:#171819;
+}
+
+.footer-form-header {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  color:#FFF;
+  margin-right: 70px;
+}
+
+.footer-form-email {
+  width: 250px;
+  height: 40px;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #48555B
 }
 
