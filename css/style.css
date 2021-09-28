@@ -40,7 +40,18 @@ img {
   font-size: 13px;
   text-align: center;
   letter-spacing: 0.5px;
-  color: #fff
+  color: #fff;
+  transition: 0.05s;
+  cursor: pointer;
+}
+
+.default-btn:hover {
+  background: #0091e5;
+}
+
+.default-btn:active {
+  background: #0091e5;
+  box-shadow: inset 0px 0px 2px 1px #48555B;
 }
 
 .header {
@@ -186,6 +197,7 @@ nav .container ul{
 
 .story-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -220,6 +232,7 @@ nav .container ul{
 
 .capabilities {
   margin-top: 118px;
+  padding-bottom: 115px;
 }
 
 .capabilities-top {
@@ -230,6 +243,8 @@ nav .container ul{
 
 .capabilities-call {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .capabilities-header {
@@ -265,3 +280,34 @@ nav .container ul{
 .capabilities-btn {
   margin-left: 40px;
 }
+
+.capabilities-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 78px;
+}
+
+.capabilities-card {
+  max-width: 295px;
+  height: 330px;
+  border: 1px solid #E6E6E6;
+  background-color: #fff;
+  padding: 38px 23px;
+}
+
+.capabilities-card-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #48555B;
+  margin-top: 25px;
+  margin-bottom: 13px;
+}
+
+.capabilities-card-text {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 23px;
+}
+
