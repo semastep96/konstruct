@@ -31,6 +31,18 @@ img {
   height: 100%;
 }
 
+.default-btn {
+  width: 150px;
+  height: 40px;
+  background: #00A4E5;
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #fff
+}
+
 .header {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
@@ -81,6 +93,10 @@ img {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
   padding: 24px 0;
   border: 1px solid #E6E6E6;
   border-left: none;
@@ -200,4 +216,52 @@ nav .container ul{
 
 .blue {
   color: #00A4E5;
+}
+
+.capabilities {
+  margin-top: 118px;
+}
+
+.capabilities-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.capabilities-call {
+  display: flex;
+}
+
+.capabilities-header {
+  text-transform: capitalize;
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 2.30625px;
+  color: #48555B;
+  margin-bottom: 71px;
+}
+
+.capabilities-header::after {
+  content: "";
+  display: block;
+  width: 50px;
+  padding-top: 3px;
+  border-bottom: 2px solid #00A4E5;
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+}
+
+.capabilities-text {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 19px;
+  color: #48555B;
+  max-width: 395px;
+}
+
+.capabilities-btn {
+  margin-left: 40px;
 }
