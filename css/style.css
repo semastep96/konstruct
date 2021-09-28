@@ -8,6 +8,7 @@
 body {
 	color: #212121;
 	font: 400 13px/1 'Open Sans', sans-serif;
+  background: #FFF;
 }
 
 a {
@@ -41,8 +42,9 @@ img {
   text-align: center;
   letter-spacing: 0.5px;
   color: #fff;
-  transition: 0.05s;
+  transition: 0.1s;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .default-btn:hover {
@@ -52,6 +54,7 @@ img {
 .default-btn:active {
   background: #0091e5;
   box-shadow: inset 0px 0px 2px 1px #48555B;
+  font-size: 12px;
 }
 
 .header {
@@ -232,7 +235,7 @@ nav .container ul{
 
 .capabilities {
   margin-top: 118px;
-  padding-bottom: 115px;
+  padding-bottom: 30px;
 }
 
 .capabilities-top {
@@ -303,11 +306,38 @@ nav .container ul{
   color: #48555B;
   margin-top: 25px;
   margin-bottom: 13px;
+  text-transform: capitalize;
 }
 
 .capabilities-card-text {
   font-weight: normal;
   font-size: 13px;
   line-height: 23px;
+}
+
+.call-section {
+  height: 100vh;
+  background-image: url(../img/city_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.call-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-section-header {
+  font-weight: bold;
+  margin-top: -15vh;
+  margin-bottom: 35px;
+  max-width: 350px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #48555B;
 }
 
