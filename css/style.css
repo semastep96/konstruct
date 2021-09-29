@@ -140,7 +140,6 @@ nav .container ul{
 }
 
 .nav-link {
-  margin-left: 30px;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -148,6 +147,10 @@ nav .container ul{
   transition: 0.2s ease-out;
   position: relative;
 }
+
+nav li:not(:first-child) {
+  margin-left: 30px;
+} 
 
 .nav-link::after{
   content: "";
@@ -473,3 +476,151 @@ nav .container ul{
 .footer-copyright a {
   text-decoration: underline;
 }
+
+/* media */
+@media screen and (max-width: 510px) {
+  .story-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+
+  .story-img-wrapper img {
+    margin: 15px 0 0;
+    max-width: 140%;
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .capabilities-call {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 9px;
+  }
+
+  .nav .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .capabilities-btn {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  .capabilities-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-company {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .footer-nav {
+    margin-bottom: 15px;
+  }
+
+  .footer-header{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .story-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-text-wrapper {
+    max-width: 70%;
+  }
+
+  .story-main-phraze{
+    text-align: center;
+  }
+
+  .story-img-wrapper {
+    align-self: center;
+    margin-top: 25px;
+  }
+
+  .capabilities-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .capabilities-header {
+    margin-bottom: 30px;
+  }
+
+  .capabilities-services {
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .capabilities-card {
+    width: 60%;
+    max-width: 60%;
+    text-align: center;
+  }
+
+  .capabilities-card:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .capabilities-header::after{
+    left: 50%;
+    margin-left: -25px;
+  }
+
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-form-header{
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  .footer-form-email{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .story {
+    padding-bottom: 0px;
+  }
+
+  .story-header {
+    margin-bottom: 45px;
+  }
+
+  .call-section {
+    margin-top: -100px;
+  }
+
+}
+
+/* end media */
